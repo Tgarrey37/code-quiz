@@ -1,0 +1,18 @@
+.mainh1,
+.frontpara {
+  text-align: center;
+}
+.startbutton {
+  background-color: aqua;
+}
+.startdiv {
+  position: relative;
+  text-align: center;
+}
+.highscore-atag {
+  text-decoration: none;
+}
+.highscore {
+  color: red;
+  top: 0;
+}
