@@ -21,9 +21,14 @@
 }
 .highscore {
   color: red;
+  font-size: 20px;
 }
-#quiz,
+
 #inputScore,
 #highScores {
+  display: none;
+}
+
+.hide {
   display: none;
 }
