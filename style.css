@@ -2,7 +2,14 @@
 .frontpara {
   text-align: center;
 }
-.startbutton {
+.frontpara {
+  font-size: 20px;
+}
+.timercountdown {
+  float: right;
+}
+
+.startquiz {
   background-color: aqua;
 }
 .startdiv {
@@ -14,5 +21,9 @@
 }
 .highscore {
   color: red;
-  top: 0;
+}
+#quiz,
+#inputScore,
+#highScores {
+  display: none;
 }
