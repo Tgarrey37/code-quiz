@@ -32,3 +32,23 @@
 .hide {
   display: none;
 }
+.answerDiv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn0,
+.btn1,
+.btn2,
+.btn3 {
+  margin: auto;
+  position: relative;
+  width: 200px;
+  height: 30px;
+  background: aqua;
+}
