@@ -1,3 +1,4 @@
+/* Styling to my main h1 and my start quiz page <p> tag */
 .mainh1,
 .frontpara {
   text-align: center;
@@ -5,27 +6,37 @@
 .frontpara {
   font-size: 20px;
 }
+
+/* Timer put into the top right of the page */
 .timercountdown {
   float: right;
 }
 
+/* Button colors */
 .startquiz,
 #goBack,
 #clearScores {
   background-color: aqua;
 }
+
+/* Start quiz button poisitioning */
 .startdiv {
   position: relative;
   text-align: center;
 }
+
+/* High scored a tag without an underline */
 .highscore-atag {
   text-decoration: none;
 }
+
+/* Color and font size of my click Highscore <a> tag */
 .highscore {
   color: red;
   font-size: 20px;
 }
 
+/* Hide css */
 #inputScore,
 #highScores {
   display: none;
@@ -34,19 +45,25 @@
 .hide {
   display: none;
 }
+
+/* Questions and answers positioning */
 .answerDiv {
   text-align: center;
   margin-top: 50px;
 }
 
+/* universal h1 */
 .h1 {
   text-align: center;
   margin-top: 100px;
 }
+
+/* centering of answer message */
 #answerMessage {
   text-align: center;
 }
 
+/* Button positioning for answers and styling */
 .btn0,
 .btn1,
 .btn2,
