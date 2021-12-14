@@ -15,7 +15,7 @@
 
         <div class="timercountdown">Time: <span id="timer">0</span></div>
         <a class="highscore-atag" href="#">
-            <h3 class="highscore">Click for Highscores!</h3>
+            <h3 class="highscore" id="viewHScores">Click for Highscores!</h3>
         </a>
 
     </header>
@@ -41,8 +41,9 @@
                 <div>
                     <button type="button" class="btn0" id="0">Answer</button>
                 </div>
-                <button type="button" class="btn1 " id="1">Answer</button>
-
+                <div>
+                    <button type="button" class="btn1" id="1">Answer</button>
+                </div>
                 <div>
                     <button type="button" class="btn2" id="2">Answer</button>
                 </div>
@@ -50,14 +51,31 @@
                     <button type="button" class="btn3" id="3">Answer</button>
                 </div>
             </div>
+            <h3 id="answerMessage"></h3>
+        </div>
+    </section>
+    <section>
+        <div class="highScoreDiv" id="inputScore">
+            <h1 class="doneH1"> DONE! </h1>
+            <p class="pFS">Your Final Score: <span id="score"></span></p>
+            <p class="pInitials">Enter Initials: <input type="text" id="initials"></p>
+            <button type="button" id="submitInitials">Submit!</button>
+        </div>
+    </section>
+
+    <section>
+        <div id="highScores">
+            <h1 class="h1HS">Highscores!</h1>
+            <div id="scores"></div>
+            <button type="button" id="goBack">Go Back!</button>
+            <button type="button" id="clearScores">Clear Scores</button>
         </div>
     </section>
 
 
 
-
-    <script src="./assets/Js/script.js"></script>
     <script src="./assets/Js/questions.js"></script>
+    <script src="./assets/Js/script.js"></script>
 </body>
 
 </html>

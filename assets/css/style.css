@@ -9,7 +9,9 @@
   float: right;
 }
 
-.startquiz {
+.startquiz,
+#goBack,
+#clearScores {
   background-color: aqua;
 }
 .startdiv {
@@ -40,6 +42,9 @@
 .h1 {
   text-align: center;
   margin-top: 100px;
+}
+#answerMessage {
+  text-align: center;
 }
 
 .btn0,
