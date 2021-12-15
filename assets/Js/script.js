@@ -18,7 +18,7 @@ var goBackBtnEl = document.querySelector("#goBack");
 var clearScoresBtnEl = document.querySelector("#clearScores");
 var viewHScoresBtnEl = document.querySelector("#viewHScores");
 var currentQuestion = 0;
-var timeGiven = 50;
+var timeGiven = 60;
 var secondsElapsed = 0;
 var interval;
 var score = 0;
@@ -105,6 +105,12 @@ function renderHighScores() {
   }
 }
 
+function reset() {
+  timeGiven = 60;
+  score = 0;
+  secondsElapsed = 0;
+  currentQuestion = 0;
+}
 // Function to show and hide certain elements.
 function show(element) {
   element.style.display = "inline";
@@ -144,10 +150,10 @@ function stopTimer() {
   clearInterval(interval);
 }
 
-// function endGame() {
-//   if (timeGiven === 0);
-//   show(submitInitialsBtnEl);
-// }
+function endGame() {
+  show(inputScoreEl);
+  hide(quizEl);
+}
 
 // pull answers and check answers event listener.
 answersEl.addEventListener("click", function (e) {
@@ -167,7 +173,7 @@ viewHScoresBtnEl.addEventListener("click", function () {
   hide(viewHScoresBtnEl);
   renderHighScores();
   stopTimer();
-  // reset();
+  reset();
 });
 
 // Go back and clear highscore button event listener.
@@ -175,6 +181,8 @@ goBackBtnEl.addEventListener("click", function () {
   hide(highScoresEl);
   show(joinUsEl);
   show(startQuizBtnEl);
+  show(viewHScoresBtnEl);
+  startDiv.style.display = "block";
 });
 clearScoresBtnEl.addEventListener("click", function () {
   highScores = [];
